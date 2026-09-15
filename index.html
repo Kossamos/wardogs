@@ -28,12 +28,10 @@ nav .links a{color:var(--text);text-decoration:none;font-weight:600;font-size:14
 nav .links a:hover{color:var(--gold)}
 .lang{border:1px solid var(--gold2);background:none;color:var(--gold);border-radius:6px;padding:6px 10px;font-weight:800;cursor:pointer}
 @media(max-width:820px){nav .links{display:none}}
-.hero{position:relative;min-height:clamp(560px,78vh,820px);display:grid;place-items:center;text-align:center;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url(assets/banner.webp) center/cover;filter:brightness(.45)}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,var(--bg))}
-.hero .in{position:relative;z-index:1;padding:60px 20px}
-.hero img{width:170px;margin:0 auto 18px;border-radius:50%;box-shadow:0 0 60px rgba(222,176,82,.35)}
-.hero h1{font-size:clamp(40px,8vw,84px);color:var(--gold);text-shadow:0 4px 0 #000}
+.hero{text-align:center}
+.hero .art{width:100%;max-width:1600px;margin:0 auto}
+.hero .in{padding:30px 20px 50px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .hero p{font-size:clamp(17px,2.2vw,22px);max-width:760px;margin:0 auto 26px;color:#f3efe3}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#111;font-weight:800;text-decoration:none;padding:14px 22px;border-radius:8px;margin:6px;border:0;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--gold);border:2px solid var(--gold)}
@@ -72,15 +70,17 @@ html[lang=en] [data-en]{display:revert}
     <a href="#jogo"><span data-pt>O Jogo</span><span data-en>The Game</span></a>
     <a href="#guia"><span data-pt>Guia</span><span data-en>Guide</span></a>
     <a href="#patentes"><span data-pt>Patentes</span><span data-en>Ranks</span></a>
+    <a href="#servidor"><span data-pt>Servidor</span><span data-en>Server</span></a>
     <a href="#streamers">Streamers</a>
     <a href="#apoiar"><span data-pt>Apoiar</span><span data-en>Support</span></a>
   </div>
   <button class="lang" id="lang">EN</button>
 </div></nav>
 
-<header class="hero" id="top"><div class="in">
-  <img src="assets/logo.webp" alt="WARDOGS PT & EN logo">
-  <h1>WARDOGS</h1>
+<header class="hero" id="top">
+  <img class="art" src="assets/banner.webp" alt="WARDOGS Comunidade PT & EN: the General and the pack">
+  <div class="in">
+  <h1 class="sr">WARDOGS</h1>
   <p data-pt>A comunidade de WARDOGS em português e inglês. Encontra squad, aprende o jogo, sobe de patente e joga com a matilha.</p>
   <p data-en>The WARDOGS community in Portuguese and English. Find a squad, learn the game, rank up and play with the pack.</p>
   <a class="btn" href="#" data-link="discord" target="_blank" rel="noopener">💬 <span data-pt>Entrar no Discord</span><span data-en>Join the Discord</span></a>
@@ -150,6 +150,16 @@ html[lang=en] [data-en]{display:revert}
     <div class="card"><h3>🎬 Clips</h3><span data-pt>Mostra as tuas melhores jogadas à matilha.</span><span data-en>Show your best plays to the pack.</span></div>
   </div>
   <p style="margin-top:26px;text-align:center"><a class="btn" href="#" data-link="discord" target="_blank" rel="noopener">💬 <span data-pt>Entrar agora</span><span data-en>Join now</span></a></p>
+</div></section>
+
+<section id="servidor"><div class="wrap">
+  <div class="support">
+    <p><span class="pill">🛠️ <span data-pt>EM BREVE</span><span data-en>COMING SOON</span></span></p>
+    <h2>🎮 <span data-pt>Servidor de jogo da comunidade</span><span data-en>Community game server</span></h2>
+    <p class="muted" data-pt>Estamos a preparar um servidor WARDOGS só para a nossa comunidade: noites de squad, eventos, jogadores conhecidos e regras justas. Entra no Discord e sê o primeiro a saber quando abrir.</p>
+    <p class="muted" data-en>We are getting a WARDOGS server ready just for our community: squad nights, events, familiar faces and fair rules. Join the Discord and be the first to know when it opens.</p>
+    <a class="btn" href="#" data-link="discord" target="_blank" rel="noopener">🔔 <span data-pt>Quero saber primeiro</span><span data-en>Tell me first</span></a>
+  </div>
 </div></section>
 
 <section id="streamers"><div class="wrap split">
